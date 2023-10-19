@@ -22,9 +22,7 @@ const Home = () => {
                     <h3>Sustainable Carpentry</h3>
                     <div className='subtitle'>
                         We source the highest quality materials
-                        <br/>
                         so your piece will last a lifetime,
-                        <br/>
                         and longer.
                     </div>
                 </div>

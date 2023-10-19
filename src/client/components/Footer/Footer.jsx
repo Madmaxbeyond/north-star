@@ -22,7 +22,7 @@ const Footer = () => {
                     <button onClick={() => setRequest(true)}>Request a Quote</button>
                 </div>
                 <div className='location-container col-12'>
-                    <div className='col-6'>
+                    <div className='col-6 col-xl-7'>
                         <img className='email-icon' src={email} alt='email' />
                         <a href="mailto:info@northstarcarpentry.com">info@northstarcarpentry.com</a>
                     </div>

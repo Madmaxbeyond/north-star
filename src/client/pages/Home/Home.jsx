@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import carpenter from '/austin-ramsey-unsplash.png'
+import carpenter from '/austin-ramsey-unsplash-small.jpg'
 import Popup from '../../components/Popup';
-import arrow from '/arrow-white.svg';
 import star from '/blue-star.svg';
 // keep styles here for whole project
 import styles from '../Home/styles.scss';
@@ -30,7 +29,7 @@ const Home = () => {
                     </div>
                 </div>
                     <button className='read-more-btn' onClick={() => setReadMore(true)}>
-                        Read More <img src={arrow} className='arrow' alt='read more arrow' />
+                        Read More →
                     </button>
                 </div>
                 <img className='carpenter-img' src={carpenter} alt='carpenter' />
@@ -42,7 +41,7 @@ const Home = () => {
                     <p><img src={star} alt='bullet point' />Hand made with care</p>
                 </div>
                 <button className='read-more-btn-mbl' onClick={() => setReadMore(true)}>
-                    Read More <img src={arrow} className='arrow' alt='read more arrow' />
+                    Read More →
                 </button>
             </div>
         </div>

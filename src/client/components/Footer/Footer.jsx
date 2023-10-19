@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Popup from '../Popup';
 import star from '/grey-star.svg';
+import email from '/letter-icon.svg'
 import footerCurve from '/footer-curve-2.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -21,8 +22,11 @@ const Footer = () => {
                     <button onClick={() => setRequest(true)}>Request a Quote</button>
                 </div>
                 <div className='location-container col-12'>
-                    <div className='col-7'><a href="mailto:info@northstarcarpentry.com">info@northstarcarpentry.com</a></div>
-                    <div className='address'>
+                    <div className='col-6'>
+                        <img className='email-icon' src={email} alt='email' />
+                        <a href="mailto:info@northstarcarpentry.com">info@northstarcarpentry.com</a>
+                    </div>
+                    <div className='address col-lg-4'>
                         PO Box 1234
                         <br/>
                         Seattle, WA 98888, USA

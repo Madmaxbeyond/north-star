@@ -24,6 +24,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        padding: 1rem 0 0 0;
         .titleCard {
             max-width: 30vw;
             h3 {
@@ -83,8 +84,11 @@ body {
     color: #ffff;
     background-color: #175B93;
     overflow: none;
-    // padding for new svg curve - thinner
     padding: 1rem 0 0 0;
+    .email-icon {
+        width: 1rem;
+        margin-right: 5px;
+    }
     .logo-container  {
         display: flex;
         flex-direction: row;
@@ -135,6 +139,11 @@ body {
         background-color: #ffff;
         color: black;
     }
+}
+
+.svg-curve-header {
+    padding: 0 0 1rem 0;
+    width: 100vw;
 }
 
 .svg-curve-footer {

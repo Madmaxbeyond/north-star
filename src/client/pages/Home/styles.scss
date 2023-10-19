@@ -1,0 +1,213 @@
+// grey curve = #f7f7ff
+// blue accents = #175B93
+// star logo = #d9d9d9
+
+body {
+    overflow-x: hidden;
+}
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffff;
+}
+
+.newContainer {
+    position: relative;
+    button {
+        background-color: #175B93;
+        color: #ffff;
+    }
+    .content {
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .titleCard {
+            max-width: 30vw;
+            h3 {
+                color: #175B93;
+            }
+        }
+        .subtitle {
+            padding: 0;
+        }
+        .carpenter-img {
+            width: 15rem;
+            border-radius: 10px;
+        }
+        div {
+            padding: 1rem;
+        }
+        .read-more-btn {
+            margin: 0 0 0 1rem;
+        }
+        .read-more-btn-mbl {
+            display: none;
+        }
+        .with-button {
+            padding: 0;
+        }
+        .arrow {
+            width: 1rem;
+            padding: 3px 0 0 5px;
+        }
+    }
+}
+
+
+.header {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    display: flex;
+}
+
+.list {
+    p {
+     margin: 0 auto 1rem auto;
+    }
+    img {
+        width: 1.5rem;
+        color: #175B93;
+        padding: 0.5rem 0.5rem 0 0;
+        position: relative;
+        top: .35rem;
+    }
+}
+
+.footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    color: #ffff;
+    background-color: #175B93;
+    overflow: none;
+    .contactContainer {
+        display: flex;
+        flex-direction: row;
+        float: inline-end;
+        .star-img {
+            width: 3rem;
+        }
+        button {
+            background-color: #ffff;
+            color: black;
+        }
+    }
+    .locationContainer {
+        display: flex;
+        font-size: 12px;
+        a {
+            color: #f7f7ff;
+            text-decoration: underline #1dbee3 2px;
+        }
+        a:hover {
+            color: #1dbee3;
+        }
+        div {
+            padding: 1rem;
+        }
+        div:last-of-type {
+            display: flex;
+            flex-direction: column;
+            max-width: max-content;
+            max-width: 16rem;
+        }
+        .address {
+            max-width: 16rem;
+        }
+    }
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    .star-img {
+        width: 3rem;
+    }
+    button {
+        background-color: #ffff;
+        color: black;
+    }
+}
+
+.svg-curve-footer {
+    padding: 1rem 0 0 0;
+    width: 105%;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .popup-inner {
+        position: relative;
+        padding: 52px;
+        width: 70%;
+        max-width: 640px;
+        color: black;
+        background-color: #ffff;
+        border-radius: 10px;
+        a {
+            color: #1dbee3;
+        }
+        a:hover {
+            text-decoration: underline #1dbee3 2px;
+        }
+    }
+    .popup-inner .close-btn {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        background-color: #175B93;
+        color: #ffff;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .newContainer {
+        .content {
+            display: flex;
+            flex-direction: column;
+            .carpenter-img {
+                display: none;
+            }
+            .titleCard {
+                max-width: 80vw;
+            }
+            .read-more-btn {
+                display: none;
+            }
+            .read-more-btn-mbl {
+                display: flex;
+            }
+        }
+    }
+    .header {
+        padding-bottom: 0;
+    }
+    .footer {
+        .locationContainer {
+            display: flex;
+            flex-direction: column;
+        }
+        .contactContainer {
+            justify-content: space-around;
+        }
+    }
+    .contactContainer {
+        justify-content: space-around;
+    }
+}
+

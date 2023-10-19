@@ -70,9 +70,9 @@ body {
     img {
         width: 1.5rem;
         color: #175B93;
-        padding: 0.5rem 0.5rem 0 0;
+        padding: 0rem 0.5rem 0 0;
         position: relative;
-        top: .35rem;
+        bottom: 0.1rem;
     }
 }
 
@@ -80,14 +80,17 @@ body {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    margin-top: auto;
     color: #ffff;
     background-color: #175B93;
     overflow: none;
-    .contactContainer {
+    // padding for new svg curve - thinner
+    padding: 1rem 0 0 0;
+    .logo-container  {
         display: flex;
         flex-direction: row;
-        float: inline-end;
+        justify-content: space-evenly;
+        position: relative;
+        bottom: 50px;
         .star-img {
             width: 3rem;
         }
@@ -96,7 +99,7 @@ body {
             color: black;
         }
     }
-    .locationContainer {
+    .location-container {
         display: flex;
         font-size: 12px;
         a {
@@ -107,7 +110,7 @@ body {
             color: #1dbee3;
         }
         div {
-            padding: 1rem;
+            padding: 0 1rem 1rem 1rem;
         }
         div:last-of-type {
             display: flex;
@@ -121,7 +124,7 @@ body {
     }
 }
 
-.contactContainer {
+.logo-container  {
     display: flex;
     flex-direction: row;
     float: right;
@@ -136,7 +139,8 @@ body {
 
 .svg-curve-footer {
     padding: 1rem 0 0 0;
-    width: 105%;
+    width: 100%;
+    margin-top: auto;
 }
 
 .popup {
@@ -168,14 +172,19 @@ body {
     }
     .popup-inner .close-btn {
         position: absolute;
-        top: 16px;
-        right: 16px;
+        top: 14px;
+        right: 14px;
         background-color: #175B93;
         color: #ffff;
     }
+    .popup-text {
+        br {
+            display: inline;
+        }
+    }
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 766px) {
     .newContainer {
         .content {
             display: flex;
@@ -196,18 +205,24 @@ body {
     }
     .header {
         padding-bottom: 0;
+        width: 100vw;
     }
     .footer {
-        .locationContainer {
+        .location-container {
             display: flex;
             flex-direction: column;
         }
-        .contactContainer {
-            justify-content: space-around;
+        .logo-container {
+            position: auto;
+            bottom: auto;
+            padding-bottom: 1rem;
         }
     }
-    .contactContainer {
-        justify-content: space-around;
+}
+
+@media screen and (max-width: 450px) {
+    .popup {
+        font-size: 14px;
     }
 }
 

@@ -14,8 +14,8 @@ const Home = () => {
         <div className='newContainer'>
         <Popup action={readMore} setAction={setReadMore}>
             Our woodworkers care about sustaining strong forests and building quality goods,
-            <br/> that is why we source 70% of our materials from reclamation lots. Cutting
-            <br/> down trees is never our first stop.
+            that is why we source 70% of our materials from reclamation lots. Cutting
+            down trees is never our first stop.
         </Popup>
             <div className='content'>
                 <div className='with-button'>

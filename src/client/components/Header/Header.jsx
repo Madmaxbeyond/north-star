@@ -1,4 +1,3 @@
-// import styles from '../../pages/Home/styles.scss';
 import headerCurve from '/header-curve.svg'
 
 const Header = () => {

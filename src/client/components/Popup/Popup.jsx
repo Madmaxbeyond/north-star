@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Popup = (props) => {
 
     return (props.action) ? (
@@ -10,6 +12,16 @@ const Popup = (props) => {
             </div>
         </div>
     ) : null;
+};
+
+Popup.propTypes = {
+    action: PropTypes.func.isRequired,
+    setAction: PropTypes.func.isRequired,
+    children: PropTypes.node,
+};
+
+Popup.defaultProps = {
+    children: null,
 };
 
 export default Popup;
